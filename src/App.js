@@ -126,7 +126,7 @@ export const StyledImg = styled.img`
 export const StyledCont = styled.div`
   /* width: 60%; */
   /* border: 2px solid black; */
-  padding: 0 10rem 28rem 10rem;
+  padding: 0 10rem 24rem 10rem;
   display: flex;
   justify-content: center;
   grid-gap: 2rem;
@@ -182,7 +182,7 @@ function App() {
                 blockchain.smartContract.methods
                     .mint(mintAmount)
                     .send({
-                        gasLimit: String(gasLimit),
+                       
                         to: CONFIG.CONTRACT_ADDRESS,
                         from: blockchain.account,
                         value: totalCostWei,
