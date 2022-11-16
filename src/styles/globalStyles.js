@@ -53,7 +53,7 @@ export const Container = styled.div`
 
 export const TextTitle = styled.h2`
   font-family: "Patrick Hand SC", cursive;
-  color: var(--primary-text);
+  color: black;
   font-size: 3.0rem;
   font-weight: 500;
   line-height: 1.4;
@@ -61,14 +61,14 @@ export const TextTitle = styled.h2`
 
 export const TextSubTitle = styled.h3`
   font-family: "Patrick Hand SC", cursive;
-  color: var(--primary-text);
+  color: black;
   font-size: 2.5rem;
   line-height: 1.3;
 `;
 
 export const TextDescription = styled.p`
   font-family: "Patrick Hand SC", cursive;
-  color: var(--primary-text);
+  color: black;
   font-size: 2.6rem;
   line-height: 1.4;
 `;
