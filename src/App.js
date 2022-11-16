@@ -259,7 +259,7 @@ function App() {
                 ><br/><br/>
                     <h1
                         style={{
-                            color: "white",
+                            color: "#D4EEFF",
                             margin: "0",
                             textAlign: "center",
                             fontSize: "5rem",
