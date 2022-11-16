@@ -8,19 +8,21 @@ const Header = () => {
 
 
             <footer class="new_footer_area bg_color">
-                <s.Container jc={"center"} ai={"center"} style={{ width: "100%", color: "black" }}>
-                    <s.TextDescription
-                        style={{
-                            textAlign: "center",
-
-                            marginTop: "40px",
-                        }}
-                    >
-                        Please make sure you are connected to the right network (Ethereum) and the correct whitlisted address. <br />
-
-                    </s.TextDescription>
-                </s.Container>
+           
                 <div class="new_footer_top">
+                    <s.Container jc={"center"} ai={"center"} style={{ width: "100%", color: "black",padding:"0px 40px 60px 40px" }}>
+                        <s.TextDescription
+                            style={{
+                                textAlign: "center",
+
+
+                                
+                            }}
+                        >
+                            Please make sure you are connected to the right network (Ethereum) and the correct whitlisted address. <br />
+
+                        </s.TextDescription>
+                    </s.Container>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-3 col-md-6">
@@ -72,7 +74,8 @@ const Header = () => {
                             <div class="footer_bg_one"></div>
                             <div class="footer_bg_two"></div>
                         </div>
-                    </div>
+                </div>
+
                     <div class="footer_bottom">
                         <div class="container">
                             <div class="row align-items-center">

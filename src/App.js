@@ -252,7 +252,7 @@ function App() {
             <Header />
            
             <s.Screen
-                style={{ backgroundImage: `url("https://mint.ghostlers.io/images/background.gif")`, width: "100%", height:"500px" }}            >
+                class=""          >
                 <s.Container
                     flex={1}
                     ai={"center"}
@@ -275,7 +275,7 @@ function App() {
                         WE ARE GHOSTLERS
                     </h1>
                     <s.SpacerSmall />
-                    <ResponsiveWrapper flex={1} style={{ padding: "24px 0" }}>
+                    <ResponsiveWrapper flex={1} style={{ padding: "0 0" }}>
                         <s.Container flex={1} jc={"center"} ai={"center"}>
                             <StyledImg alt={"Ghostlers"} src={"/config/images/example.gif"} />
                         </s.Container>
@@ -285,7 +285,7 @@ function App() {
                             jc={"center"}
                             ai={"center"}
                             style={{
-                                padding: "2.4rem 2.4rem 0 2.4rem",
+                                padding: "1.4rem 1.4rem 0 1.4rem",
                                 borderRadius: 24,
                             }}
                         >
@@ -412,7 +412,7 @@ function App() {
                                             >
                                                 {feedback}
                                             </s.TextDescription>
-                                            <s.SpacerMedium />
+                                            
                                             <s.Container ai={"center"} jc={"center"} fd={"row"}>
                                                 <StyledRoundButton
                                                     style={{ lineHeight: 0.4 }}
@@ -465,7 +465,7 @@ function App() {
                         </s.Container>
                     </ResponsiveWrapper>
 
-                    <StyledCont>
+                    <StyledCont style={{marginTop:"280px"}}>
                         {CONFIG.OPENSEA != "" ? (
                             <StyledButton
                                 onClick={(e) => {

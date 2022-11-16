@@ -172,3 +172,34 @@ div {
     user-select: none;
     -o-user-select: none;
 }
+@media (max-width: 300px) {
+    body {
+        background-repeat: no-repeat;
+        z-index: 99;
+        background-image: url("https://mint.ghostlers.io/images/background.gif");
+    }
+}
+
+@media (min-width: 301px) and (max-width: 600px) {
+    body {
+        background-repeat: no-repeat;
+        z-index: 99;
+        background-image: url("https://mint.ghostlers.io/images/background.gif");
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        background-repeat: no-repeat;
+        z-index: 99;
+        background-image: url("https://mint.ghostlers.io/images/background.gif");
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-repeat: no-repeat;
+        z-index:99;
+        background-image: url("https://mint.ghostlers.io/images/background.gif");
+    }
+}
