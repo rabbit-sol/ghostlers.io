@@ -255,7 +255,7 @@ function App() {
                     flex={1}
                     ai={"center"}
                     style={{ padding: "24px 0 0 0" }}
-                    image={CONFIG.SHOW_BACKGROUND ? "https://images-ext-1.discordapp.net/external/rLY_wpfWgka1ZEWfMVZbosx3EHfru6v-AMkIXTQacl8/https/mint.ghostlers.io/images/background.gif91~hmac=fc9d1fd9738468b874689d684026edfd6880933a6e574a36caea5699ccda400f" : null}
+                    image={CONFIG.SHOW_BACKGROUND ? "https://mint.ghostlers.io/images/background.gif" : null}
                 ><br/><br/>
                     <h1
                         style={{
