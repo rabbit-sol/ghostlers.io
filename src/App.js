@@ -126,16 +126,13 @@ export const StyledImg = styled.img`
 export const StyledCont = styled.div`
   /* width: 60%; */
   /* border: 2px solid black; */
-  padding: 0 10rem 2rem 10rem;
+  padding: 0 10rem 28rem 10rem;
   display: flex;
   justify-content: center;
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   flex-direction: row;
   align-items: center;
-  @media (max-width: 766px) {
-    flex-direction: column;
-    align-items: center;
-  }
+ 
 `;
 
 export const StyledLink = styled.a`
@@ -266,7 +263,7 @@ function App() {
                     <h1
                         style={{
                             
-                            margin: "0",
+                            marginBottom: "40px",
                             textAlign: "center",
                             fontSize: "5rem",
                             textShadow: "0.3rem 0.3rem #f5dcff",
@@ -278,12 +275,12 @@ function App() {
                         
                         WE ARE GHOSTLERS
                     </h1>
-                    <s.SpacerSmall />
+                
                     <ResponsiveWrapper flex={1} style={{ padding: "0 0" }}>
                         <s.Container flex={1} jc={"center"} ai={"center"}>
                             <StyledImg alt={"Ghostlers"} src={"/config/images/example.gif"} />
                         </s.Container>
-                        <s.SpacerLarge />
+                       
                         <s.Container
                             flex={2}
                             jc={"center"}
@@ -469,7 +466,7 @@ function App() {
                         </s.Container>
                     </ResponsiveWrapper>
 
-                    <StyledCont style={{marginTop:"20px"}}>
+                    <StyledCont >
                         {CONFIG.OPENSEA != "" ? (
                             <StyledButton
                                 onClick={(e) => {
@@ -507,6 +504,7 @@ function App() {
 
                 </s.Screen>
             </div>
+            <Footer/>
            
         </div>
     );

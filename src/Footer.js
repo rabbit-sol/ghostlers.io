@@ -14,8 +14,8 @@ const Header = () => {
                         <s.TextDescription
                             style={{
                                 textAlign: "center",
-
-
+                                fontSize: "2.3rem",
+                                marginTop:"30px"
                                 
                             }}
                         >
