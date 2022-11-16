@@ -178,7 +178,7 @@ div {
     .bgImg {
         background-repeat: no-repeat;
         z-index: 99;
-        background-image: url("https://mint.ghostlers.io/images/background_m.gif");
+        background-image: url("https://mint.ghostlers.io/images/background.gif");
     }
 }
 
@@ -186,7 +186,7 @@ div {
     .bgImg {
         background-repeat: no-repeat;
         z-index: 99;
-        background-image: url("https://mint.ghostlers.io/images/background_i.gif");
+        background-image: url("https://mint.ghostlers.io/images/background.gif");
     }
 }
 
