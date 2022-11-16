@@ -6,6 +6,7 @@ import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import store from "./redux/store";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const truncate = (input, len) =>
     input.length > len ? `${input.substring(0, len)}...` : input;
@@ -250,16 +251,17 @@ function App() {
         <div >
             <Header />
            
-            <s.Screen>
+            <s.Screen
+                style={{ backgroundImage: `url("https://mint.ghostlers.io/images/background.gif")`, width: "100%", height:"500px" }}            >
                 <s.Container
                     flex={1}
                     ai={"center"}
-                    style={{ padding: "0 0 0 0", backgroundImage:`url("https://mint.ghostlers.io/images/background.gif")`}}
+                    style={{ padding: "0 0 0 0",  }}
                      
                 ><br/><br/>
                     <h1
                         style={{
-                            color: "#D4EEFF",
+                            
                             margin: "0",
                             textAlign: "center",
                             fontSize: "5rem",
@@ -493,23 +495,14 @@ function App() {
                             </StyledButton>
                         ) : null}
                     </StyledCont>
-                    
+                   
+    
+                   
                 </s.Container>
-<s.Container jc={"center"} ai={"center"} style={{ width: "100%" }}>
-                        <s.TextDescription
-                            style={{
-                                textAlign: "center",
-                               
-                                paddingBottom: "4rem",
-                            }}
-                        >
-                            Please make sure you are connected to the right network (
-                            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. <br />
-                            Please note: Once you make the purchase, you cannot undo this
-                            action.
-                        </s.TextDescription>
-                    </s.Container>
+               
+
             </s.Screen>
+            <Footer />
         </div>
     );
 }
