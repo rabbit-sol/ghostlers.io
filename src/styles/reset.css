@@ -172,27 +172,17 @@ div {
     user-select: none;
     -o-user-select: none;
 }
-@media (max-width: 300px) {
+
+
+@media  (max-width: 768px) {
     body {
         background-repeat: no-repeat;
         z-index: 99;
+       
         background-image: url("https://mint.ghostlers.io/images/background.gif");
     }
-}
-
-@media (min-width: 301px) and (max-width: 600px) {
-    body {
-        background-repeat: no-repeat;
-        z-index: 99;
-        background-image: url("https://mint.ghostlers.io/images/background.gif");
-    }
-}
-
-@media (min-width: 601px) and (max-width: 768px) {
-    body {
-        background-repeat: no-repeat;
-        z-index: 99;
-        background-image: url("https://mint.ghostlers.io/images/background.gif");
+    .new_footer_area {
+        margin-top: 240px;
     }
 }
 
@@ -201,5 +191,8 @@ div {
         background-repeat: no-repeat;
         z-index:99;
         background-image: url("https://mint.ghostlers.io/images/background.gif");
+    }
+    .new_footer_area{
+        margin-top:240px;
     }
 }

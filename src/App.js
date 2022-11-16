@@ -115,6 +115,9 @@ export const StyledImg = styled.img`
   height: auto;
   margin: 0 auto;
   max-width: 30rem;
+@media (max-width: 767px) {
+    max-width: 20rem;
+  }
   border-radius: 50%;
   box-shadow: 0 0 1rem 0.2rem black;
   /* transition: width 0.5s; */
@@ -249,6 +252,7 @@ function App() {
 
     return (
         <div >
+            <div className="bgImg">
             <Header />
            
             <s.Screen
@@ -465,7 +469,7 @@ function App() {
                         </s.Container>
                     </ResponsiveWrapper>
 
-                    <StyledCont style={{marginTop:"280px"}}>
+                    <StyledCont style={{marginTop:"20px"}}>
                         {CONFIG.OPENSEA != "" ? (
                             <StyledButton
                                 onClick={(e) => {
@@ -501,7 +505,8 @@ function App() {
                 </s.Container>
                
 
-            </s.Screen>
+                </s.Screen>
+            </div>
             <Footer />
         </div>
     );
