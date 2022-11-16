@@ -116,7 +116,7 @@ export const StyledImg = styled.img`
   margin: 0 auto;
   max-width: 30rem;
 @media (max-width: 767px) {
-    max-width: 20rem;
+    max-width: 16rem;
   }
   border-radius: 50%;
   box-shadow: 0 0 1rem 0.2rem black;
