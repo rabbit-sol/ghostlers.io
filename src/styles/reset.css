@@ -174,25 +174,36 @@ div {
 }
 
 
-@media  (max-width: 768px) {
+@media  (max-width: 600px) {
     body {
         background-repeat: no-repeat;
         z-index: 99;
-       
-        background-image: url("https://mint.ghostlers.io/images/background.gif");
-    }
-    .new_footer_area {
-        margin-top: 240px;
+        background-image: url("https://mint.ghostlers.io/images/background_m.gif");
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 601px) and (max-width: 1200px) {
     body {
         background-repeat: no-repeat;
-        z-index:99;
+        z-index: 99;
+        background-image: url("https://mint.ghostlers.io/images/background_i.gif");
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    body {
+        background-repeat: no-repeat;
+        z-index: 99;
         background-image: url("https://mint.ghostlers.io/images/background.gif");
     }
-    .new_footer_area{
-        margin-top:240px;
+}
+
+@media (max-width: 482px) {
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

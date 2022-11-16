@@ -34,32 +34,20 @@ const Header = () => {
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" >
-                                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                                    <h3 class="f-title f_600 t_color f_size_18">Resources</h3>
                                     <ul class="list-unstyled f_list f_size_18">
-                                            <li><a href="#">Company</a></li>
+                                        <li><a href="#">FAQ</a></li>
                                         <li><a href="#">Whitepaper</a></li>
-                                            <li><a href="#">Desktop</a></li>
-                                            <li><a href="#">Projects</a></li>
+                                        <li><a href="#">Support</a></li>
+                                          
                                             
                                         </ul>
                                     </div>
                                 </div>
+                               
                                 <div class="col-lg-3 col-md-6">
-                                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" >
-                                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
-                                    <ul class="list-unstyled f_list f_size_18">
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Term &amp; conditions</a></li>
-                                           
-                                           
-                                            <li><a href="#">Support</a></li>
-                                            <li><a href="#">Privacy</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" >
-                                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                    <div class="f_widget social-widget pl_70 mt-4 wow fadeInLeft" data-wow-delay="0.8s" >
+                                        <h3 class="f-title f_600 t_color f_size_18">Socials</h3>
                                         <div class="f_social_icon">
                                             <a href="#" class="fab fa-facebook"></a>
                                             <a href="#" class="fab fa-twitter"></a>

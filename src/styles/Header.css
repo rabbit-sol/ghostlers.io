@@ -6,14 +6,14 @@
 }
 
 .header-items {
-  height: 100%;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  max-width: 80vw;
-  margin: 0 auto;
-  display: flex;
-  
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+   
 }
 
 .header-home {
@@ -24,7 +24,7 @@
     width: 80%;
     margin: 0 auto;
     display: flex;
-   
+    flex-wrap: wrap;
 }
 
 .header--logo {
@@ -33,7 +33,7 @@
 
 .header--nav {
   display: flex;
-  flex-wrap: wrap;
+ 
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -48,7 +48,10 @@
     max-width: 90vw;
   }
     .header-home {
-       width: 100%;
+       width: 55%;
+    }
+    .header--nav {
+        margin-top:2rem;
     }
 }
 
