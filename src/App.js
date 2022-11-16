@@ -493,7 +493,9 @@ function App() {
                             </StyledButton>
                         ) : null}
                     </StyledCont>
-                    <s.Container jc={"center"} ai={"center"} style={{ width: "100%" }}>
+                    
+                </s.Container>
+<s.Container jc={"center"} ai={"center"} style={{ width: "100%" }}>
                         <s.TextDescription
                             style={{
                                 textAlign: "center",
@@ -507,7 +509,6 @@ function App() {
                             action.
                         </s.TextDescription>
                     </s.Container>
-                </s.Container>
             </s.Screen>
         </div>
     );
