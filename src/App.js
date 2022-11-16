@@ -254,7 +254,7 @@ function App() {
                 <s.Container
                     flex={1}
                     ai={"center"}
-                    style={{ padding: "24px 0 0 0", backgroundImage:url("https://mint.ghostlers.io/images/background.gif"), height:"70%", width:"80%" }}
+                    style={{ padding: "24px 0 0 0", backgroundImage:`url("https://mint.ghostlers.io/images/background.gif")`, height:"70%", width:"80%" }}
                      
                 ><br/><br/>
                     <h1
