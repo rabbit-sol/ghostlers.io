@@ -7,9 +7,10 @@ export const Screen = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 100vh;
+ 
   display: flex;
   flex-direction: column;
+
 `;
 
 // Used for providing space between components

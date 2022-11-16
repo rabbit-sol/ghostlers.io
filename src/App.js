@@ -507,7 +507,7 @@ function App() {
 
                 </s.Screen>
             </div>
-            <Footer />
+           
         </div>
     );
 }
