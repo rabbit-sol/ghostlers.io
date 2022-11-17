@@ -176,15 +176,22 @@ div {
 
 @media  (max-width: 768px) {
     .bgImg {
-        background-repeat: no-repeat;
+        padding-bottom: 60px;
+       
         z-index: 99;
         background-image: url("https://mint.ghostlers.io/images/background_m.gif");
+    }
+    .notes {
+        margin-top: 220px;
+        padding: 0 50px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
     .bgImg {
-        background-repeat: no-repeat;
+        
+        padding-bottom: 250px;
+       
         z-index: 99;
         background-image: url("https://mint.ghostlers.io/images/background_i.gif");
     }
@@ -194,12 +201,15 @@ div {
 
 @media (min-width: 1200px) {
     .bgImg {
-        background-repeat: no-repeat;
+       min-height:1400px;
+       
         z-index: 99;
         background-image: url("https://mint.ghostlers.io/images/background.gif");
     }
+    .notes{
+        margin-top:15px;
+        padding:0 100px;
+    }
 }
-.bgImg{
-    height:100%
-}
+
 

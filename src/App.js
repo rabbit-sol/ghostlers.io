@@ -126,7 +126,7 @@ export const StyledImg = styled.img`
 export const StyledCont = styled.div`
   /* width: 60%; */
   /* border: 2px solid black; */
-  padding: 0 10rem 24rem 10rem;
+  padding: 0 10rem 4rem 10rem;
   display: flex;
   justify-content: center;
   grid-gap: 2rem;
@@ -248,7 +248,7 @@ function App() {
     }, [blockchain.account]);
 
     return (
-        <div >
+        <div  >
             <div className="bgImg">
             <Header />
            
@@ -262,7 +262,7 @@ function App() {
                 ><br/><br/>
                     <h1
                         style={{
-                            
+                            marginTop:"20px",
                             marginBottom: "40px",
                             textAlign: "center",
                             fontSize: "5rem",
@@ -356,10 +356,13 @@ function App() {
                                     >
                                         (Excluding gas fees)
                                     </s.TextDescription>
-                                    <s.SpacerSmall />
+                                    
                                     {blockchain.account === "" ||
                                         blockchain.smartContract === null ? (
-                                        <s.Container ai={"center"} jc={"center"}>
+                                                    <s.Container ai={"center"} jc={"center"}>
+                                                        <s.SpacerSmall />
+                                                        
+                                                       
                                             <s.TextDescription
                                                 style={{
                                                     textAlign: "center",
@@ -404,7 +407,9 @@ function App() {
                                             </s.TextTitle>
                                         </s.Container>
                                     ) : (
-                                        <>
+                                                    <>
+                                                        <s.SpacerSmall />
+                                                        <s.SpacerSmall />
                                             <s.TextDescription
                                                 style={{
                                                     textAlign: "center",
@@ -412,7 +417,8 @@ function App() {
                                                 }}
                                             >
                                                 {feedback}
-                                            </s.TextDescription>
+                                                        </s.TextDescription>
+                                                        <s.SpacerSmall />
                                             
                                             <s.Container ai={"center"} jc={"center"} fd={"row"}>
                                                 <StyledRoundButton
@@ -494,8 +500,23 @@ function App() {
                             >
                                 CONTRACT
                             </StyledButton>
-                        ) : null}
-                    </StyledCont>
+                            ) : null}
+
+                        </StyledCont>
+                        <s.SpacerSmall />
+                        <s.TextDescription className="notes"
+                                style={{
+                                    textAlign: "center",
+                                    fontSize: "2.3rem",
+                                   
+
+                                }}
+                            >
+                                Please make sure you are connected to the right network (Ethereum) and the correct whitlisted address. <br />
+
+                            </s.TextDescription>
+                        
+
                    
     
                    

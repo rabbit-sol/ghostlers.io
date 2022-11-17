@@ -12,7 +12,7 @@
 .new_footer_area .footer_bottom {
     padding-top: 5px;
     padding-bottom: 30px;
-    background-color:#D4EEFF
+    background-color: #D4EEFF
 }
 
 .footer_bottom {
@@ -154,6 +154,7 @@ button:focus {
 .f_size_18 {
     font-size: 24px;
 }
+
 .f_size_18 {
     font-size: 18px;
 }
@@ -236,20 +237,21 @@ h6 {
 /*************footer End*****************/
 
 .animation4sec {
-    visibility: visible; 
-    animation-delay: 0.4s; 
+    visibility: visible;
+    animation-delay: 0.4s;
     animation-name: fadeInLeft;
 }
+
 .animation6sec {
-    visibility: visible; 
-    animation-delay: 0.6s; 
+    visibility: visible;
+    animation-delay: 0.6s;
     animation-name: fadeInLeft;
 }
+
 .animation8sec {
-    visibility: visible; 
-    animation-delay: 0.8s; 
+    visibility: visible;
+    animation-delay: 0.8s;
     animation-name: fadeInLeft;
 }
 
 /*************footer End*****************/
-
