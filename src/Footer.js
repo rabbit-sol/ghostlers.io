@@ -10,19 +10,8 @@ const Footer = () => {
             <footer class="new_footer_area bg_color">
 
                 <div class="new_footer_top">
-                    <s.Container jc={"center"} ai={"center"} style={{ width: "100%", color: "black", padding: "0px 40px 60px 40px" }}>
-                        <s.TextDescription
-                            style={{
-                                textAlign: "center",
-                                fontSize: "2.3rem",
-                                marginTop: "30px"
-
-                            }}
-                        >
-                            Please make sure you are connected to the right network (Ethereum) and the correct whitlisted address. <br />
-
-                        </s.TextDescription>
-                    </s.Container>
+                   
+                   
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-3 col-md-6">

@@ -349,7 +349,7 @@ function App() {
                             ) : (
                                 <>
                                     <s.TextTitle style={{ textAlign: "center", }}>
-                                            1 Ghostler cost you {data.cost} ETH
+                                            1 GHOSTLER= {data.cost} ETH
                                     </s.TextTitle>
                                     <s.TextDescription
                                         style={{ textAlign: "center" }}
