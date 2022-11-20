@@ -7,6 +7,11 @@ import styled from "styled-components";
 import store from "./redux/store";
 import Header from "./Header";
 import Footer from "./Footer";
+import { providerOptions } from "./redux/providerOptions";
+import { ethers } from "ethers";
+import Web3Modal from "web3modal";
+import { ABI, contractAddress } from "./redux/config";
+
 
 const truncate = (input, len) =>
     input.length > len ? `${input.substring(0, len)}...` : input;
@@ -140,6 +145,11 @@ export const StyledLink = styled.a`
   text-decoration: none;
 `;
 
+const web3Modal = new Web3Modal({
+   // optional
+    cacheProvider: true, // optional
+    providerOptions, // required
+});
 function App() {
     const dispatch = useDispatch();
     const blockchain = useSelector((state) => state.blockchain);
@@ -165,6 +175,35 @@ function App() {
         MARKETPLACE_LINK: "",
         SHOW_BACKGROUND: false,
     });
+
+    const [provider, setProvider] = useState();
+    const [library, setLibrary] = useState();
+    const [account, setAccount] = useState();
+    const [signature, setSignature] = useState("");
+    const [error, setError] = useState("");
+    const [chainId, setChainId] = useState();
+    const [network, setNetwork] = useState();
+    const [message, setMessage] = useState("");
+    const [signedMessage, setSignedMessage] = useState("");
+    const [verified, setVerified] = useState();
+
+    const connectWallet = async () => {
+        try {
+            const provider = await web3Modal.connect();
+            const library = new ethers.providers.Web3Provider(provider);
+            const accounts = await library.listAccounts();
+            const network = await library.getNetwork();
+            const signer = library.getSigner();
+            const contKBZ = new ethers.Contract(contractAddress, ABI, signer);
+            setContractKBZ(contKBZ);
+            setProvider(provider);
+            setLibrary(library);
+            if (accounts) setAccount(accounts[0]);
+            setChainId(network.chainId);
+        } catch (error) {
+            setError(error);
+        }
+    };
 
     const claimNFTs = () => {
         let gasLimit = CONFIG.GAS_LIMIT;
@@ -375,7 +414,7 @@ function App() {
                                             <StyledButton
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    dispatch(connect());
+                                                                connectWallet();
                                                     getData();
                                                 }}
                                             >
