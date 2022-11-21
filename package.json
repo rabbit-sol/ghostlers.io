@@ -1,14 +1,10 @@
 {
-  "name": "Ghostlers Minting Dapp",
+  "name": "hashlips_nft_minting_dapp",
   "version": "1.0.0",
-  "description": "Minting dapp is a quick and easy way to connect your smart contract and start minting NFTs.",
+  "description": "HashLips minting dapp is a quick and easy way to connect your smart contract and start minting NFTs.",
   "private": true,
   "dependencies": {
-    "@walletconnect/client": "^1.8.0",
-    "@walletconnect/qrcode-modal": "^1.8.0",
     "@walletconnect/web3-provider": "^1.8.0",
-    "@web3modal/ethereum": "^2.0.0-beta.5",
-    "@web3modal/react": "^2.0.0-beta.5",
     "ethers": "^5.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -17,10 +13,8 @@
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.3.0",
-    "wagmi": "^0.8.5",
     "web-vitals": "^1.0.1",
     "web3": "^1.5.1",
-    "web3-eth-contract": "^1.5.2",
     "web3modal": "^1.9.9"
   },
   "author": "Daniel Eugene Botha (HashLips)",
