@@ -4,8 +4,10 @@
     "\\public",
     "\\public\\config",
     "\\src",
-    "\\src\\styles"
+    "\\src\\redux",
+    "\\src\\redux\\blockchain",
+    "\\src\\redux\\data"
   ],
-  "SelectedNode": "\\src\\styles\\reset.css",
+  "SelectedNode": "\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
