@@ -5,9 +5,8 @@
     "\\public\\config",
     "\\src",
     "\\src\\redux",
-    "\\src\\redux\\blockchain",
-    "\\src\\redux\\data"
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\styles\\app.js",
   "PreviewInSolutionExplorer": false
 }

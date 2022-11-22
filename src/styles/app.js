@@ -1,5 +1,3 @@
-﻿
-
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
@@ -21,7 +19,7 @@ const truncate = (input, len) =>
 const whitelistedAddresses = [];
 
 const lowerCaseWhitelist = whitelistedAddresses.map((el) => el.toLowerCase());
-const whitelistedFull = [...whitelistedAddresses, ...lowerCaseWhitelist];
+
 
 export const StyledButton = styled.button`
   align-self: center;
@@ -178,46 +176,11 @@ function App() {
         SHOW_BACKGROUND: false,
     });
 
-
-    const claimNFTs = () => {
-        let gasLimit = CONFIG.GAS_LIMIT;
-
-        let totalGasLimit = String(gasLimit * mintAmount);
-
-        console.log("Gas limit: ", totalGasLimit);
-        setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
-        setClaimingNft(true);
-        blockchain.smartContract.methods.
-            cost().
-            call()
-            .then(function (info) {
-                let totalCostWei = String(info * mintAmount);
-                blockchain.smartContract.methods
-                    .mint(mintAmount)
-                    .send({
-
-                        to: CONFIG.CONTRACT_ADDRESS,
-                        from: blockchain.account,
-                        value: totalCostWei,
-                    })
-                    .once("error", (err) => {
-                        setFeedback("Opps not whitelisted or max mint amount reached.");
-                        setClaimingNft(false);
-                    })
-                    .then((receipt) => {
-                        console.log(receipt);
-                        setFeedback(
-                            `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
-                        );
-                        setClaimingNft(false);
-                        dispatch(fetchData(blockchain.account));
-                    });
-            });
+  
 
 
 
 
-    };
 
     const decrementMintAmount = () => {
         let newMintAmount = mintAmount - 1;
@@ -370,8 +333,7 @@ function App() {
                                             (Excluding gas fees)
                                         </s.TextDescription>
 
-                                        {blockchain.account === "" ||
-                                            blockchain.smartContract === null ? (
+                                            {account === "" ? (
                                             <s.Container ai={"center"} jc={"center"}>
                                                 <s.SpacerSmall />
 
@@ -394,19 +356,7 @@ function App() {
                                                 >
                                                     CONNECT
                                                 </StyledButton>
-                                                {blockchain.errorMsg !== "" ? (
-                                                    <>
-                                                        <s.SpacerSmall />
-                                                        <s.TextDescription
-                                                            style={{
-                                                                textAlign: "center",
 
-                                                            }}
-                                                        >
-                                                            {blockchain.errorMsg}
-                                                        </s.TextDescription>
-                                                    </>
-                                                ) : null}
                                                 <s.TextTitle
                                                     style={{
                                                         textAlign: "center",
